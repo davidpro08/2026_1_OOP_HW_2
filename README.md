@@ -54,7 +54,7 @@ cdk deploy
 cdk destroy
 ```
 
-### 4.3 Results
+## 결과 확인
 
 1. **모듈별 배포 및 네트워크 격리 확인:** AWS CloudFormation 콘솔에 접속하면 각 티어가 논리적으로 분리되어 생성됨을 볼 수 있다.
 2. EC2 대시보드를 확인하면, `PublicWebServer` 인스턴스에는 외부 통신을 위한 공인(Public) IPv4 주소가 부여된 반면,`PrivateAppServer`에는 공인 IP가 일절 부여되지 않아 인터넷으로부터 원천적으로 숨겨져(Network Isolation) 있음을 입증한다.
